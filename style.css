@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: radial-gradient(
+    circle at 50% 10%,
+    hsl(214, 47%, 23%),
+    hsl(237, 49%, 15%)
+  );
+  color: #fff;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  min-height: 100vh;
+}
+
+.container {
+  width: 600px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  border: 3px solid hsl(217, 16%, 45%);
+  border-radius: 20px;
+  padding: 20px;
+  margin: 50px 0;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 0;
+  text-transform: uppercase;
+}

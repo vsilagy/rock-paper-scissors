@@ -25,9 +25,7 @@ function computerPick() {
 }
 
 function playerPick() {
-  let input = prompt("Type Rock, Paper or Scissors").toLowerCase();
-  console.log(input);
-  return input;
+  return "rock";
 }
 
 game();
