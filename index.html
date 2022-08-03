@@ -19,7 +19,68 @@
           <span>Paper</span>
           <span>Scissors</span>
         </h1>
+        <div class="score-container">
+          <h4>Player</h4>
+          <p id="score">0</p>
+        </div>
+        <div class="score-container">
+          <h4>Computer</h4>
+          <p id="computer">0</p>
+        </div>
       </header>
+
+      <main id="main">
+        <button class="btn-circle btn-paper pick" id="paper">
+          <span class="wrapper">
+            <img src="./img/icon-paper.svg" alt="paper icon" />
+          </span>
+        </button>
+        <button class="btn-circle btn-scissors pick" id="scissors">
+          <span class="wrapper">
+            <img src="./img/icon-scissors.svg" alt="scissors icon" />
+          </span>
+        </button>
+        <button class="btn-circle btn-rock pick" id="rock">
+          <span class="wrapper">
+            <img src="./img/icon-rock.svg" alt="rock icon" />
+          </span>
+        </button>
+      </main>
+
+      <div class="result" id="result">
+        <div>
+					<h2>You Picked</h2>
+					<button class="btn-circle btn-paper" id="player-choice">
+						<span class="wrapper">
+							<img src="./img/icon-paper.svg" alt="paper icon" />
+						</span>
+					</button>
+				</div>
+				<div>
+					<p class="big-text"><span id="message">You Win</span></p>
+					<button class="btn-play-again" id="play-again">Play Again</button>
+				</div>
+				<div>
+					<h2>Computer Picked</h2>
+					<button class="btn-circle btn-rock" id="computer-choice">
+						<span class="wrapper">
+							<img src="./img/icon-rock.svg" alt="rock icon" />
+						</span>
+					</button>
+				</div>
+			</div>
+      </div>
+
+      <footer class="footer">
+        <p>Made by vsilagy</p>
+        <a href="http://github.com/vsilagy">
+          <img
+            src="./img/GitHub-Mark.png"
+            alt="github logo"
+            class="github-logo"
+          />
+        </a>
+      </footer>
     </div>
     <script src="script.js"></script>
   </body>
