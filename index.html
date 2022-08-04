@@ -47,49 +47,52 @@
         </button>
       </main>
 
-      <div class="result" id="result">
-        <div>
-					<h2>You Picked</h2>
-					<button class="btn-circle btn-paper" id="player-choice">
-						<span class="wrapper">
-							<img src="./img/icon-paper.svg" alt="paper icon" />
-						</span>
-					</button>
-				</div>
-				<div>
-					<p class="big-text"><span id="message">You Win</span></p>
-					<button class="btn-play-again" id="play-again">Play Again</button>
-				</div>
-				<div>
-					<h2>Computer Picked</h2>
-					<button class="btn-circle btn-rock" id="computer-choice">
-						<span class="wrapper">
-							<img src="./img/icon-rock.svg" alt="rock icon" />
-						</span>
-					</button>
-				</div>
-			</div>
-      </div>
-
       <div class="rules" id="rules">
-        <img src="./img/image-rules.svg" alt="rules of the game">
+        <img src="./img/image-rules.svg" alt="rules of the game" />
         <button id="close">
-          <img src="./img/icon-close.svg" alt="close rules">
+          <img src="./img/icon-close.svg" alt="close rules" />
         </button>
       </div>
       <button class="btn-rules" id="open">Rules</button>
 
+      <div class="result" id="result">
+        <div>
+          <h2>You Picked</h2>
+          <button class="btn-circle btn-paper" id="player-choice">
+            <span class="wrapper">
+              <img src="./img/icon-paper.svg" alt="paper icon" />
+            </span>
+          </button>
+        </div>
+        <div>
+          <p class="big-text"><span id="message">You Win</span></p>
+          <button class="btn-play" id="play-again">Play Again</button>
+        </div>
+        <div>
+          <h2>Computer Picked</h2>
+          <button class="btn-circle btn-rock" id="computer-choice">
+            <span class="wrapper">
+              <img src="./img/icon-rock.svg" alt="rock icon" />
+            </span>
+          </button>
+        </div>
+      </div>
+      <div id="game">
+        <h1 class="big-text" id="game-msg">What Bucko!?</h1>
+        <button class="btn-play" id="reset">Try Again</button>
+      </div>
     </div>
-      <footer class="footer">
-        <p>Made by vsilagy</p>
-        <a href="http://github.com/vsilagy">
-          <img
-            src="./img/GitHub-Mark.png"
-            alt="github logo"
-            class="github-logo"
-          />
-        </a>
-      </footer>
+
+    <footer class="footer">
+      <p>Made by vsilagy</p>
+      <a href="http://github.com/vsilagy">
+        <img
+          src="./img/GitHub-Mark.png"
+          alt="github logo"
+          class="github-logo"
+        />
+      </a>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
