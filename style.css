@@ -247,5 +247,5 @@ button:focus {
 }
 
 .github-logo:hover {
-  transform: rotate(360deg) scale(1.2);
+  transform: rotateY(0.5turn) scale(1.4);
 }

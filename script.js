@@ -32,6 +32,7 @@ picks.forEach((button) => {
 });
 
 playAgainBtn.addEventListener("click", () => {
+  // show result
   main.style.display = "flex";
   result.style.display = "none";
 });
@@ -117,14 +118,14 @@ function getComputerPick() {
   }
 }
 
-function updateRound(selectedClass, pick) {
+function updateRound(selectionEl, pick) {
   // reset class
-  selectedClass.classList.remove("btn-paper");
-  selectedClass.classList.remove("btn-rock");
-  selectedClass.classList.remove("btn-scissors");
+  selectionEl.classList.remove("btn-paper");
+  selectionEl.classList.remove("btn-rock");
+  selectionEl.classList.remove("btn-scissors");
   // update the image
-  const img = selectedClass.querySelector("img");
-  selectedClass.classList.add(`btn-${pick}`);
+  const img = selectionEl.querySelector("img");
+  selectionEl.classList.add(`btn-${pick}`);
   img.src = `./img/icon-${pick}.svg`;
   img.alt = pick;
 }
