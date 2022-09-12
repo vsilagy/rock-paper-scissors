@@ -17,8 +17,7 @@ body {
 }
 
 .container {
-  width: 600px;
-  max-width: 100%;
+  max-width: 600px;
   margin: 0 auto;
 }
 
@@ -29,11 +28,12 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1em;
-  margin: 2.5em 0;
+  margin: 2.5em auto;
 }
 
 h1 {
   font-size: 3rem;
+  font-weight: 700;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -42,6 +42,7 @@ h1 {
 }
 
 h2 {
+  font-size: 2rem;
   letter-spacing: 2px;
   text-transform: uppercase;
   margin-bottom: .5em;
@@ -69,7 +70,6 @@ header .score-container p {
   color: hsl(229, 25%, 31%);
   font-size: 3rem;
   font-weight: 700;
-  margin: 0;
 }
 
 main {
@@ -96,6 +96,7 @@ main::before {
   z-index: -1;
 }
 
+/* buttons */
 .btn-circle {
   border: none;
   border-radius: 50%;
@@ -151,7 +152,7 @@ button:focus {
   font-size: 1.125rem;
   font-family: inherit;
   position: fixed;
-  bottom: 3em;
+  bottom: 4em;
   right: 2em;
   padding: .6em 1.5em;
   letter-spacing: 2px;
@@ -165,7 +166,7 @@ button:focus {
   background-color: #fff;
   font-size: 1.2rem;
   font-family: inherit;
-  padding: .5em 1.2em;
+  padding: .6em 1.2em;
   margin: .5em 0;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -176,14 +177,14 @@ button:focus {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  width: 700px;
+  width: 600px;
   max-width: 100%;
   margin: 0 auto;
 }
 
 .result .btn-circle {
   margin: 2em;
-  transform: scale(1.4);
+  transform: scale(1.3);
 }
 
 .big-text {
@@ -199,7 +200,7 @@ button:focus {
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 700px;
+  width: 600px;
   height: 100vh;
   max-width: 100%;
   margin: 0 auto;
@@ -253,4 +254,81 @@ button:focus {
 
 .github-logo:hover {
   transform: rotateY(0.5turn) scale(1.4);
+}
+
+
+@media (max-width:30em) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+    margin-bottom: 0;
+  }
+
+  h4 {
+    font-size: .8rem;
+    letter-spacing: 1px;
+  }
+
+  header {
+    justify-content:space-around;
+    max-width: 22em;
+    padding: .2em;
+    margin: 2em auto;
+  }
+
+  header .score-container {
+    padding: .8rem;
+  }
+
+  header .score-container p {
+    font-size: 2rem;
+  }
+
+  main {
+    height: 275px;
+    width: 350px;
+  }
+
+  .btn-circle {
+    width: 120px;
+    height: 120px;
+  }
+
+  .btn-circle .wrapper {
+    height: 90px;
+    width: 90px;
+  }
+
+  .result {
+    max-width: 22em;
+  }
+
+  .result .btn-circle {
+    margin: 1em;
+    transform: scale(1);
+  }
+
+  .btn-play {
+    font-size: .9rem;
+    padding: .3em .9em;
+  }
+
+  .big-text {
+    font-size: 1.5rem;
+  }
+
+  .btn-rules {
+    font-size: .9rem;
+  }
+
+  .footer {
+    font-size: .9rem;
+  }
+
+  .github-logo {
+    height: 1.2em;
+  } 
 }
