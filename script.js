@@ -60,24 +60,24 @@ function playRound() {
   updateRound(computerChoice, computerPick);
 
   if (playerPick === computerPick) {
-    message.innerText = `It's a tie`;
+    message.textContent = `It's a tie`;
   } else if (
     (playerPick === "paper" && computerPick === "rock") ||
     (playerPick === "rock" && computerPick === "scissors") ||
     (playerPick === "scissors" && computerPick === "paper")
   ) {
     updatePlayerScore(1);
-    message.innerText = `You win!`;
+    message.textContent = `You win!`;
   } else {
     updateComputerScore(1);
-    message.innerText = `You Lose!`;
+    message.textContent = `You Lose!`;
   }
 
-  if (playerScore === 5) {
-    gameMsg.innerText = "Congratulations! You won the game";
+  if (playerScore === 3) {
+    gameMsg.textContent = "Congratulations! You won the game";
     gameOver();
-  } else if (computerScore === 5) {
-    gameMsg.innerText = "Game over";
+  } else if (computerScore === 3) {
+    gameMsg.textContent = "Game over";
     gameOver();
   } else {
     // show the selection, hide main
@@ -88,12 +88,12 @@ function playRound() {
 
 function updatePlayerScore(value) {
   playerScore += value;
-  playerScoreDisplay.innerText = playerScore;
+  playerScoreDisplay.textContent = playerScore;
 }
 
 function updateComputerScore(value) {
   computerScore += value;
-  computerScoreDisplay.innerText = computerScore;
+  computerScoreDisplay.textContent = computerScore;
 }
 
 function gameOver() {
@@ -103,8 +103,8 @@ function gameOver() {
   game.style.display = "flex";
   playerScore = 0;
   computerScore = 0;
-  playerScoreDisplay.innerText = 0;
-  computerScoreDisplay.innerText = 0;
+  playerScoreDisplay.textContent = 0;
+  computerScoreDisplay.textContent = 0;
 }
 
 function getComputerPick() {
